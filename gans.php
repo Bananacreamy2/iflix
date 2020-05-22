@@ -7,7 +7,7 @@ echo color("red","   [♡] TOLONG DIBACA DULU SEBELUM MENGGUNAKAN SC \n");
 echo color("purple","[♥] INI SCRIPT IFLIX ACCOUNT CREATOR BOSQU \n");
 echo color("nevy","  [♡] JANGAN LUPA FOLLOW IG GUE YA : @Bananacreamy \n");
 echo color("yellow","[♥] SCRIPT INI SUDAH INCLUDR VIP 1 BULAN\n");
-echo color("blue"," [♡] SCRIPT INI MENGANTUNG UNSUR ALAY \n");
+echo color("blue"," [♡] SCRIPT INI WARNA WARNI ADA UNSUR ALAY \n");
 echo color("purple"," [♥] SCRIPT INI GRATIS, BILA ADA YG JUAL CHAT TELEGRAM \n");
 echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
 	echo "\n";
@@ -83,9 +83,9 @@ function create_iflix() {
 }
 
 
-echo color("nevy"," ☣️Iflix Account Creator☣️\n");
-echo color("yellow"," "☢️Sekali Lagi Jangan Lupa Follow IG @Bananacreamy☢️ \n");
-echo color("nevy"," "☣️Mau Bikin Akun Berapa Lur? ☣️ \n");
+echo color("nevy"," Iflix Account Creator\n");
+echo color("yellow"," "Sekali Lagi Jangan Lupa Follow IG @Bananacreamy \n");
+echo color("nevy"," "Mau Bikin Akun Berapa Lur?  \n");
 $banyak = trim(fgets(STDIN));
 for ($i = 0; $i < $banyak ; $i++) {
 	create_iflix();
