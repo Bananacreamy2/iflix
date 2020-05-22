@@ -1,5 +1,16 @@
 <?php  
-echo color("yellow"," Created by Rendy a.k.a Bananacreamy \n");
+date_default_timezone_set('Asia/Jakarta');
+include "function.php";
+echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
+echo color("blue","  [♥]  Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
+echo color("red","   [♡] TOLONG DIBACA DULU SEBELUM MENGGUNAKAN SC \n");
+echo color("purple","[♥] INI SCRIPT IFLIX ACCOUNT CREATOR BOSQU \n");
+echo color("nevy","  [♡] JANGAN LUPA FOLLOW IG GUE YA : @Bananacreamy \n");
+echo color("yellow","[♥] SCRIPT INI SUDAH INCLUDR VIP 1 BULAN\n");
+echo color("blue"," [♡] SCRIPT INI MENGANTUNG UNSUR ALAY \n");
+echo color("purple"," [♥] SCRIPT INI GRATIS, BILA ADA YG JUAL CHAT TELEGRAM \n");
+echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
+	echo "\n";
 function post($url = null, $data = null, $headers = null) {
 	$ch = curl_init($url);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
