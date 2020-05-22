@@ -1,5 +1,5 @@
 <?php  
-// Created by Rendy a.k.a Bananacreamy
+echo color("yellow"," Created by Rendy a.k.a Bananacreamy \n");
 function post($url = null, $data = null, $headers = null) {
 	$ch = curl_init($url);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -61,25 +61,25 @@ function create_iflix() {
 	$register = post('https://www.iflix.com/api/identity/v4/register', '{"deviceId":"543509e6-c07b-4d32-9ed2-cd71ce5be817-ixdj","deviceName":"Win32","name":"'.$name[1].'","email":"'.$email[1].'","password":"rendygans"}', $headers);
 
 	if (strripos($register, '"account"')) {
-		echo $data = "✅ Sukses Bikin Akun Lur ✅ | ".$email[1]." | yudhagans\n\r";
+		echo color("green"," $data = "✅ Sukses Bikin Akun Lur ✅ | ".$email[1]." | rendygans\n\r");
 		$fh = fopen("hasil_iflix.txt", "a");
         fwrite($fh, $data);
         fclose($fh);
 
 	} else {
-		echo "🔕 Ada Yang Salah Lur🔕\n";
+		echo color("red","🔕 Ada Yang Salah Lur🔕 \n");
 	}
 }
 
 
-echo "🤖Iflix Account Creator🤖\n";
-echo "☢️Jangan Lupa Follow IG @Bananacreamy☢️\n";
-echo "☣️Mau Bikin Akun Berapa Lur? ☣️";
+echo color("nevy"," "🤖Iflix Account Creator🤖 \n");
+echo color("yellow"," "☢️Jangan Lupa Follow IG @Bananacreamy☢️ \n");
+echo color("nevy"," "☣️Mau Bikin Akun Berapa Lur? ☣️ \n");
 $banyak = trim(fgets(STDIN));
 for ($i = 0; $i < $banyak ; $i++) {
 	create_iflix();
 }
-echo "akun disimpan di hasil_iflix.txt\n";
+echo color("yellow"," "akun disimpan di hasil_iflix.txt" \n");
 
 
 ?>
