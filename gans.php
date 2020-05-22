@@ -83,14 +83,14 @@ function create_iflix() {
 }
 
 
-echo color("nevy"," Iflix Account Creator\n");
-echo color("yellow"," Sekali Lagi Jangan Lupa Follow IG @Bananacreamy \n");
-echo color("nevy"," Mau Bikin Akun Berapa Lur?  \n");
+echo color("nevy"," 🤖Iflix Account Creator🤖\n");
+echo color("yellow"," ❗❗Sekali Lagi Jangan Lupa Follow IG @Bananacreamy ❗❗\n");
+echo color("nevy"," ⏩Mau Bikin Akun Berapa Lur?⏪  \n");
 $banyak = trim(fgets(STDIN));
 for ($i = 0; $i < $banyak ; $i++) {
 	create_iflix();
 }
-echo color("yellow"," "akun disimpan di hasil_iflix.txt" \n");
+echo color("yellow"," akun disimpan di hasil_iflix.txt" \n");
 
 
 ?>
