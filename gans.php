@@ -72,7 +72,7 @@ function create_iflix() {
 	$register = post('https://www.iflix.com/api/identity/v4/register', '{"deviceId":"543509e6-c07b-4d32-9ed2-cd71ce5be817-ixdj","deviceName":"Win32","name":"'.$name[1].'","email":"'.$email[1].'","password":"rendygans"}', $headers);
 
 	if (strripos($register, '"account"')) {
-		echo $data = "[+] Success create account | ".$email[1]." | yudhagans\n\r";
+		echo $data = "[+] Success create account | ".$email[1]." | rendygans\n\r";
 		$fh = fopen("hasil_iflix.txt", "a");
         fwrite($fh, $data);
         fclose($fh);
