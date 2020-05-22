@@ -90,7 +90,7 @@ $banyak = trim(fgets(STDIN));
 for ($i = 0; $i < $banyak ; $i++) {
 	create_iflix();
 }
-echo color("yellow"," akun disimpan di hasil_iflix.txt" \n");
+echo color("yellow"," akun disimpan di hasil_iflix.txt n");
 
 
 ?>
